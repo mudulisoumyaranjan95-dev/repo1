@@ -1,0 +1,31 @@
+<!-- calculator.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Interest Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Interest Calculator</h1>
+    <form id="siForm">
+      <label for="principal">Principal Amount (₹):</label>
+      <input type="number" id="principal" placeholder="Enter amount" required>
+
+      <label for="rate">Rate of Interest (%):</label>
+      <input type="number" id="rate" placeholder="Enter rate" required>
+
+      <label for="time">Time (in years):</label>
+      <input type="number" id="time" placeholder="Enter time" required>
+
+      <button type="button" onclick="calculateSI()">Calculate</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
